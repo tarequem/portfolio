@@ -1,6 +1,6 @@
 :root {
-    --primary-color: turquoise;
-    --secondary-color: navy;
+    --primary-color: navy;
+    --secondary-color: turquoise;
     --tertiary-color: white;
 
 }
@@ -11,7 +11,65 @@
     padding: 0;
 }
 
+body {
+    color: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* header & navigation tags */
+
+header {
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    /*background-image: ;*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+/* fix spacing of about me and projects */
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav {
+    margin: 7px 0;;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+  
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+  
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
 
 .about-me ul {
     display: none;
