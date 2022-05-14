@@ -1,0 +1,50 @@
+:root {
+    --primary-color: turquoise;
+    --secondary-color: navy;
+    --tertiary-color: white;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header & navigation tags */
+
+.about-me ul {
+    display: none;
+}
+
+.about-me:hover ul {
+    display: block;
+}
+
+.projects ul {
+    display: none;
+}
+
+.projects:hover ul {
+    display: block;
+}
+
+/*hero form*/
+
+
+/*about me*/
+
+
+/*projects*/
+
+
+/* utilities */
+
+/* MEDIA QUERY FOR SMALLER DISPLAYS */
+@media screen and (max-width: 980px)
+
+
+
+
+
+/*put this into media inquiry for text so it's better on smaller screens: width: 85%*/
