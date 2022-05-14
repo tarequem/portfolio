@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tareque's Portfolio</title>
+</head>
+<body>
+    <!--header & navigation tags-->
+    <header>
+        <h1>
+            <a href="/"> Tareque M</a>
+        </h1>
+        <nav class="about-me">
+            <h2> About me</h2>
+            <ul>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li>
+                    <a href="#About-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#contact-info"> Contact Info</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <a href="#project1">Most Recent</a>
+                </li>
+                <li>
+                    <a href="#project2">Coming Soon</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--hero form/contact me and introduction-->
+    <section class="hero">
+        <div class="hero-cta">
+            <H2>Welcome to my portfolio!</H2>
+            <p>
+                Hover over the navigation to find links to information about me, and to navigate through my history of works. Fill in the form to get in contact with me about projects. 
+            </p>
+        </div>
+    </section>
+
+    <div class="hero-form" id="contact-me">
+        <h3>Contact Me</h3>
+        <p>Want to contact me about potential projects or work? Fill out the form below.</p>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="Your Name" id="name" name="name" class="form-input" />
+            <label for="email">Your Email</label>
+            <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
+            <label for="phone">Phone Number</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+            <label for="details">Details</label>
+            <input type="text" placeholder="Details" name="details" id="details" class="form-input" />
+        </form>
+    </div>
+
+    <!--"about me" section-->
+    <article class="flex-row" id="about-me">
+        <h3>About Me</h3>
+        <p>I am a teacher and I am a fullstack developer.</p>
+        <img src="./assets/images/about-me.jpg" alt="Tareque in a Scoops Ahoy uniform" />
+    </article>
+
+    <!--projects section-->
+    <section class="flex-row">
+        <div id="project1"> <!--flex-grow this-->
+            <img src="./assets/images/project1.png" alt="Run Buddy" />
+            <h4>Run Buddy</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+        </div>
+        <div id="project2">
+            <img src="./assets/images/project2.jpg" alt="coming soon" />
+            <h4>Coming Soon</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+        </div>
+        <div id="project2">
+            <img src="./assets/images/project2.jpg" alt="coming soon" />
+            <h4>Coming Soon</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+        </div>
+        <div id="project2">
+            <img src="./assets/images/project2.jpg" alt="coming soon" />
+            <h4>Coming Soon</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+        </div>
+    </section>
+
+    <!--contact information & policy info-->
+    <footer id="contact-info">
+        <h2>Contact Information</h2>
+        <p><span class="contact-info">Email:</span> moatartareque@gmail.com</p>
+        <p><span class="contact-info">Phone:</span> 1-800-613-8840</p>
+    </footer>
+
+</body>
+</html>
