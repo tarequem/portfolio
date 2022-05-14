@@ -12,57 +12,61 @@
         <h1>
             <a href="/"> Tareque M</a>
         </h1>
-        <nav class="about-me">
-            <h2> About me</h2>
-            <ul>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#About-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#contact-info"> Contact Info</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <a href="#project1">Most Recent</a>
-                </li>
-                <li>
-                    <a href="#project2">Coming Soon</a>
-                </li>
-            </ul>
-        </nav>
+        <div>
+            <nav class="about-me">
+                <h2> About me</h2>
+                <ul>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="#About-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#contact-info"> Contact Info</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <a href="#project1">Most Recent</a>
+                    </li>
+                    <li>
+                        <a href="#project2">Coming Soon</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!--hero form/contact me and introduction-->
     <section class="hero">
         <div class="hero-cta">
-            <H2>Welcome to my portfolio!</H2>
+            <H2>My Portfolio</H2>
             <p>
                 Hover over the navigation to find links to information about me, and to navigate through my history of works. Fill in the form to get in contact with me about projects. 
             </p>
         </div>
+        <div class="hero-form" id="contact-me">
+            <h3>Contact Me</h3>
+            <p>Want to contact me about potential projects or work? Fill out the form below.</p>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" placeholder="Your Name" id="name" name="name" class="form-input" />
+                <label for="email">Your Email</label>
+                <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
+                <label for="phone">Phone Number</label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+                <label for="details">Details</label>
+                <input type="text" placeholder="Details" name="details" id="details" class="form-input" />
+                <button type="submit">Submit form</button>
+            </form>
+        </div>
     </section>
 
-    <div class="hero-form" id="contact-me">
-        <h3>Contact Me</h3>
-        <p>Want to contact me about potential projects or work? Fill out the form below.</p>
-        <form>
-            <label for="name">Your Name</label>
-            <input type="text" placeholder="Your Name" id="name" name="name" class="form-input" />
-            <label for="email">Your Email</label>
-            <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
-            <label for="phone">Phone Number</label>
-            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
-            <label for="details">Details</label>
-            <input type="text" placeholder="Details" name="details" id="details" class="form-input" />
-        </form>
-    </div>
+    
 
     <!--"about me" section-->
     <article class="flex-row" id="about-me">
