@@ -12,7 +12,6 @@
         <h1>
             <a href="/"> Tareque M</a>
         </h1>
-        <div>
             <nav class="about-me">
                 <h2> About me</h2>
                 <ul>
@@ -20,7 +19,7 @@
                         <a href="#contact-me">Contact Me</a>
                     </li>
                     <li>
-                        <a href="#About-me">About Me</a>
+                        <a href="#about-me">About Me</a>
                     </li>
                     <li>
                         <a href="#contact-info"> Contact Info</a>
@@ -38,7 +37,6 @@
                     </li>
                 </ul>
             </nav>
-        </div>
     </header>
 
     <!--hero form/contact me and introduction-->
@@ -69,41 +67,110 @@
     
 
     <!--"about me" section-->
-    <article class="flex-row" id="about-me">
-        <h3>About Me</h3>
-        <p>I am a teacher and I am a fullstack developer.</p>
-        <img src="./assets/images/about-me.jpg" alt="Tareque in a Scoops Ahoy uniform" />
+    <article class="about" class="flex-row" id="about-me">
+        <div class="img-me">
+            <img src="./assets/images/about-me.jpg" alt="Tareque in a Scoops Ahoy uniform" />
+        </div>
+        <div class="about-text">
+            <h3>About Me</h3>
+            <p>I am a teacher and I am a fullstack developer.</p>
+        </div>
     </article>
 
     <!--projects section-->
-    <section class="flex-row">
-        <div id="project1"> <!--flex-grow this-->
-            <img src="./assets/images/project1.png" alt="Run Buddy" />
-            <h4>Run Buddy</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
-        </div>
-        <div id="project2">
-            <img src="./assets/images/project2.jpg" alt="coming soon" />
-            <h4>Coming Soon</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
-        </div>
-        <div id="project2">
-            <img src="./assets/images/project2.jpg" alt="coming soon" />
-            <h4>Coming Soon</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
-        </div>
-        <div id="project2">
-            <img src="./assets/images/project2.jpg" alt="coming soon" />
-            <h4>Coming Soon</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+    <section class="projects">
+        <article class="project-main" id="project1">
+                <div class="project-img">
+                    <a href="https://tarequem.github.io/runbuddy/">
+                        <img src="./assets/images/project1.png" alt="Run Buddy" />
+                    </a>
+                    <div class="project-desc">
+                        <h3>Run Buddy</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                    </div>
+                </div>
+        </article>
+        <article class="coming-soon" id="project2">
+                <div class="project-img2">
+                    <img src="./assets/images/project2.jpg" alt="Coming Soon" />
+                    <div class="project-desc">
+                        <h3>Coming Soon</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                    </div>
+                </div>
+        </article>
+        <article class="coming-soon">
+                <div class="project-img2">
+                    <img src="./assets/images/project2.jpg" alt="Coming Soon" />
+                    <div class="project-desc">
+                        <h3>Coming Soon</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                    </div>
+                </div>
+        </article>
+        <article class="coming-soon">
+                <div class="project-img2">
+                    <img src="./assets/images/project2.jpg" alt="Coming Soon" />
+                    <div class="project-desc">
+                        <h3>Coming Soon</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                    </div>
+                </div>
+        </article>
+        <article class="coming-soon">
+            <div class="project-img2">
+                <img src="./assets/images/project2.jpg" alt="Coming Soon" />
+                <div class="project-desc">
+                    <h3>Coming Soon</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                </div>
+            </div>
+        </article>
+    </section>
+<!-- 
+    <!/--projects section--/>
+    <section class="projects">
+        <div class="flex-box">
+            <article class="project-main">
+                <img class="project-img" src="./assets/images/project1.png" alt="Run Buddy" />
+                <div class="project-desc" id="project1"> <!/--flex-grow this--/>
+                    <h3 class="project-name">Run Buddy</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                </div>
+            </article>
+        
+        
+            <article class="project">
+                <img class="project-img" src="./assets/images/project2.jpg" alt="coming soon" />
+                <div class="project-desc" id="project2">
+                    <h3 class="project-name">Coming Soon</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                </div>
+            </article>
+
+            <article class="project">
+                <img class="project-img" src="./assets/images/project2.jpg" alt="coming soon" />
+                <div class="project-desc" id="project2">
+                    <h3 class="project-name">Coming Soon</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                </div>
+            </article>
+
+            <article class="project">
+                <img class="project-img" src="./assets/images/project2.jpg" alt="coming soon" />
+                <div class="project-desc" id="project2">
+                    <h3 class="project-name">Coming Soon</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+                </div>
+            </article>
         </div>
     </section>
-
-    <!--contact information & policy info-->
+-->
+    <!--footer-->
     <footer id="contact-info">
         <h2>Contact Information</h2>
-        <p><span class="contact-info">Email:</span> moatartareque@gmail.com</p>
-        <p><span class="contact-info">Phone:</span> 1-800-613-8840</p>
+        <p><span>Email:</span> moatartareque@gmail.com</p>
+        <p><span>Phone:</span> 1-800-613-8840</p>
     </footer>
 
 </body>
