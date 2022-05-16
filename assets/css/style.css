@@ -73,19 +73,19 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-.about-me ul {
+.about-me-nav ul {
     display: none;
 }
 
-.about-me:hover ul {
+.about-me-nav:hover ul {
     display: block;
 }
 
-.projects ul {
+.projects-nav ul {
     display: none;
 }
 
-.projects:hover ul {
+.projects-nav:hover ul {
     display: block;
 }
 
@@ -165,13 +165,17 @@ header nav ul li a:hover {
 }
 
 /* about me section */
+.about-box {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .about {
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    margin: 50px auto;
+    margin: 20px;
     padding-bottom: 50px;
-    width: 50%;
+    width: 94%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -186,12 +190,13 @@ header nav ul li a:hover {
 }
 
 .img-me {
+    display: flex;
     flex: 1 12%;
     margin-right: 20px;
 }
 
 .img-me img {
-    max-width: 100%;
+    max-width: 30%;
     padding: 20px;
 }
 
@@ -203,7 +208,6 @@ header nav ul li a:hover {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space;
 }
 
 .project-main {
@@ -233,8 +237,8 @@ header nav ul li a:hover {
 }
 
 .project-img img {
-    max-width: 50%;
-    padding: 5px;
+    max-width: 600px;
+    padding: 10px;
 }
 
 .coming-soon {
@@ -282,28 +286,150 @@ footer p span {
     color: var(--primary-color);
 }
 
-/* MEDIA QUERY FOR SMALLER DISPLAYS */
+/* MEDIA QUERIES FOR SMALLER DISPLAYS */
 @media screen and (max-width: 980px){
     header {
         padding-bottom: 0;
+        flex-direction: column;
         justify-content: center;
         position: relative;
+        
     }
     
     header h1 {
         width: 100%;
-        
+        text-align: center;
+        padding: 0 0 0 0;
     }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        display: contents;
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    footer h2, footer p {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+      
+    .hero-cta {
+        text-align: center;
+    }
+    
+    .about-me-nav ul {
+        display: block;
+    }
+    
+    .about-me-nav:hover ul {
+        display: block;
+    }
+ 
+    
+    .projects-nav ul {
+        display: block;
+    }
+    
+    .projects-nav:hover ul {
+        display: block;
+    }
+    
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-main {
+        flex: 0 70%;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .project-img2 {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .project-img img {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .project-img2 img {
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    .hero-form button {
+        width: 100%;
+    }
+      
 }
 
 
 
 @media screen and (max-width: 768px){
+    .img-me {
+        margin: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-me img {
+        max-width: 80%;
+    }
+
+    .project-main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .coming-soon {
+        flex: 0 40%;
+    }
+
+    .hero-form button {
+        width: 100%;
+    }
+
+    .project-main {
+        max-width: 100%;
+    }
+
+    .project-img img {
+        max-width: 100%;
+    }
 
 }
 
 
 
 @media screen and (max-width: 575px){
+    .img-me img {
+        max-width: 80%;
+    }
+
+    .hero-form button {
+        width: 100%;
+    }
+
+    .project-main {
+        max-width: 500px;
+    }
+
+    .project-img img {
+        max-width: 400px;
+    }
 
 }
