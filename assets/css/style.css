@@ -73,6 +73,8 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* navigation drop down styling */
+
 .about-me-nav ul {
     display: none;
 }
@@ -114,6 +116,7 @@ header nav ul li a:hover {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* hero form */
 .hero-form {
     border: 3px solid var(--secondary-color);
     background-color: var(--secondary-color);
@@ -286,7 +289,7 @@ footer p span {
     color: var(--primary-color);
 }
 
-/* MEDIA QUERIES FOR SMALLER DISPLAYS */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px){
     header {
         padding-bottom: 0;
@@ -300,6 +303,7 @@ footer p span {
         width: 100%;
         text-align: center;
         padding: 0 0 0 0;
+        font-size: 48px;
     }
 
     header nav ul {
@@ -335,7 +339,6 @@ footer p span {
         display: block;
     }
  
-    
     .projects-nav ul {
         display: block;
     }
@@ -378,7 +381,7 @@ footer p span {
 }
 
 
-
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px){
     .img-me {
         margin: 20px;
@@ -390,31 +393,20 @@ footer p span {
         max-width: 80%;
     }
 
-    .project-main {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .coming-soon {
-        flex: 0 40%;
-    }
-
     .hero-form button {
         width: 100%;
     }
 
-    .project-main {
-        max-width: 100%;
+    .project-img img {
+        max-width: 400px;
     }
 
-    .project-img img {
-        max-width: 100%;
-    }
+    
 
 }
 
 
-
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px){
     .img-me img {
         max-width: 80%;
@@ -425,11 +417,15 @@ footer p span {
     }
 
     .project-main {
-        max-width: 500px;
+        max-width: 400px;
     }
 
     .project-img img {
-        max-width: 400px;
+        max-width: 350px;
+    }
+
+    .project-desc h3 {
+        font-size: 32px;
     }
 
 }
