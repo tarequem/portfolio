@@ -17,7 +17,6 @@ body {
     background-color: var(--tertiary-color);
 }
 
-
 /* header section */
 
 header {
@@ -116,7 +115,8 @@ header nav ul li a:hover {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* hero form */
+/* hero form section */
+
 .hero-form {
     border: 3px solid var(--secondary-color);
     background-color: var(--secondary-color);
@@ -382,7 +382,7 @@ footer p span {
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .img-me {
         margin: 20px;
         align-items: center;
